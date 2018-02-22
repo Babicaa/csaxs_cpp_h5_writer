@@ -1,6 +1,6 @@
 package:
-    name: mx_cpp_h5_writer 
-    version: 0.0.1
+    name: csaxs_cpp_h5_writer 
+    version: 0.0.2
 
 build:
   number: 0
@@ -22,5 +22,5 @@ requirements:
 
 
 about:
-    summary: "cSAXS MX C++ ZMQ to H5 writer."
+    summary: "cSAXS C++ ZMQ to H5 writer."
 

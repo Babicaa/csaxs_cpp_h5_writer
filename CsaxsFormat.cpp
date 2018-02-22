@@ -10,7 +10,7 @@
 using namespace std;
 using s_ptr = shared_ptr<h5_base>;
 
-class NXmxFormat : public H5Format
+class CsaxsFormat : public H5Format
 {
     shared_ptr<unordered_map<string, DATA_TYPE>> input_value_type = NULL;
     shared_ptr<unordered_map<string, boost::any>> default_values = NULL;
@@ -18,9 +18,9 @@ class NXmxFormat : public H5Format
     shared_ptr<h5_parent> file_format = NULL;
 
     public:
-        ~NXmxFormat(){};
+        ~CsaxsFormat(){};
 
-        NXmxFormat()
+        CsaxsFormat()
         {
             // Input values definition type. 
             // Which type should be the parameters you receive over the REST api.

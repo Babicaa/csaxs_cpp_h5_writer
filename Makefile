@@ -11,13 +11,13 @@ HEADERS = $(wildcard $(SRC_DIR)/*.hpp)
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
-all: build_dirs mx_cpp_h5_writer
+all: build_dirs csaxs_cpp_h5_writer
 
 debug: CPPFLAGS += -DDEBUG_OUTPUT -g
 debug: all
 
-mx_cpp_h5_writer: $(OBJS)
-	$(CPP) $(LDFLAGS) -o $(BIN_DIR)/mx_cpp_h5_writer $(OBJS) $(LDLIBS)
+csaxs_cpp_h5_writer: $(OBJS)
+	$(CPP) $(LDFLAGS) -o $(BIN_DIR)/csaxs_cpp_h5_writer $(OBJS) $(LDLIBS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	$(CPP) $(CPPFLAGS) $(LDLIBS) -c -o $@ $<

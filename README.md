@@ -1,7 +1,7 @@
-[![Build Status](https://api.travis-ci.org/paulscherrerinstitute/mx_cpp_h5_writer.svg?branch=master)](https://travis-ci.org/paulscherrerinstitute/mx_cpp_h5_writer/) 
+[![Build Status](https://api.travis-ci.org/paulscherrerinstitute/csaxs_cpp_h5_writer.svg?branch=master)](https://travis-ci.org/paulscherrerinstitute/csaxs_cpp_h5_writer/) 
 
-# mx_cpp_h5_writer
-H5 detector data writer for cSAXS MX.
+# csaxs_cpp_h5_writer
+H5 detector data writer for cSAXS.
 
 # Table of content
 1. [Quick start](#quick_start)
@@ -16,7 +16,7 @@ H5 detector data writer for cSAXS MX.
 # Quick start
 
 ```bash
-Usage: mx_cpp_h5_writer [connection_address] [output_file] [n_frames] [rest_port] [user_id]
+Usage: csaxs_cpp_h5_writer [connection_address] [output_file] [n_frames] [rest_port] [user_id]
         connection_address: Address to connect to the stream (PULL). Example: tcp://127.0.0.1:40000
         output_file: Name of the output file.
         n_frames: Number of images to acquire. 0 for infinity (untill /stop is called).
@@ -46,10 +46,10 @@ please see the [Local build](#local_build) chapter.
 
 <a id="conda_setup"></a>
 ## Conda setup
-If you use conda, you can create an environment with the mx_cpp_h5_writer library by running:
+If you use conda, you can create an environment with the csaxs_cpp_h5_writer library by running:
 
 ```bash
-conda create -c paulscherrerinstitute --name <env_name> mx_cpp_h5_writer
+conda create -c paulscherrerinstitute --name <env_name> csaxs_cpp_h5_writer
 ```
 
 After that you can just source you newly created environment and run the writer executable.
